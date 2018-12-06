@@ -1,6 +1,6 @@
 pipeline {
 
-  agent { label 'windows_slave1' }
+  agent { label 'master' }
  
   stages {
 
@@ -20,7 +20,7 @@ pipeline {
 
           steps {
   
-             dir('D:\\Jenkins\\workspace\\workspace\\CES-BUILD-JOB\\CES-Source') {
+             dir('C:\\Program Files (x86)\\Jenkins\\workspace\\CES-BUILD-JOB\\CES-Source') {
 
                 bat 'build-all.bat'
  
