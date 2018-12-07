@@ -22,7 +22,7 @@ pipeline {
   
              dir('C:\\Program Files (x86)\\Jenkins\\workspace\\CES-BUILD-JOB\\CES-Source') {
 
-                bat 'build-all.bat'
+                
  
              }
 
