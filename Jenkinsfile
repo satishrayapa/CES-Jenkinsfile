@@ -1,3 +1,8 @@
+
+
+
+
+
 pipeline {
 
   agent { label 'master' }
@@ -9,8 +14,9 @@ pipeline {
          steps {
            
              cleanWs()
+	     checkout scm
  
-             git branch: 'grails3_migration', credentialsId: '64113721-dfcd-4ed4-89f5-8658ed598ada', url: 'https://bitbucket.org/tsmojo/cloud-environment-simulator/src/grails3_migration/'
+             //git branch: 'grails3_migration', credentialsId: '64113721-dfcd-4ed4-89f5-8658ed598ada', url: 'https://bitbucket.org/tsmojo/cloud-environment-simulator/src/grails3_migration/'
       
          }
 
